@@ -1,0 +1,44 @@
+.success-page {
+  max-width: 720px;
+
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.success-page .success-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.success-page h2 {
+  margin-bottom: 0.75rem;
+}
+
+.success-page p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+.success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.success-actions .btn {
+  min-width: 200px;
+  text-align: center;
+}

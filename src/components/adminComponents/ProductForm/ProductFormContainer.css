@@ -1,0 +1,86 @@
+.product-form {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-form h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.product-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.product-form label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="file"],
+.product-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+
+  background: var(--card);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  font: inherit;
+
+  transition: 0.25s;
+}
+
+.product-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+  outline: none;
+
+  border-color: var(--primary);
+
+  box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.2);
+}
+
+.product-form input::placeholder,
+.product-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.product-form img {
+  width: 220px;
+
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  margin-top: 0.5rem;
+}
+
+.product-form button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.error {
+  margin-top: 0.2rem;
+  color: var(--danger);
+  font-size: 0.9rem;
+}

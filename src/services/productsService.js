@@ -1,4 +1,5 @@
 import {
+  addDoc,
   collection,
   doc,
   getDoc,
@@ -83,6 +84,21 @@ export const getByCategory = async (category) => {
     return productsFormat;
   } catch (error) {
     console.error("Error al filtrar productos:", error);
+    throw error;
+  }
+};
+
+/* -------------------------------------------------------------------------- */
+/*                              ALTA DE PRODUCTO                              */
+/* -------------------------------------------------------------------------- */
+export const createProduct = async (productData) => {
+  try {
+    //Tan facil como usar la funcion addDoc y pasarle la coleccion y el doc a agregar
+    const docRef = await addDoc(productsRef, productData);
+
+    return docRef.id; // opcional, por si quieren usar el id para algo
+  } catch (error) {
+    console.error("Error al crear producto:", error);
     throw error;
   }
 };
