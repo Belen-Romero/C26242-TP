@@ -1,0 +1,116 @@
+.dashboard {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- HEADER ---------- */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------- ACCIONES ---------- */
+
+.dashboard-actions {
+  margin-bottom: 2rem;
+}
+
+.dashboard-actions h3,
+.dashboard-help h3 {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.actions-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-card {
+  flex: 1;
+
+  padding: 1.5rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  transition: 0.25s;
+}
+
+.action-card:hover:not(.disabled) {
+  transform: translateY(-3px);
+
+  border-color: var(--primary);
+
+  background: var(--primary);
+  color: white;
+}
+
+.action-card.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ---------- AYUDA ---------- */
+
+.dashboard-help {
+  padding: 1.5rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.dashboard-help p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ---------- BOTONES ---------- */
+
+.header-actions .btn:last-child:hover {
+  filter: brightness(0.9);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+
+  transition: 0.25s;
+}
+
+.btn-secondary:hover {
+  background: var(--card);
+  border-color: var(--primary);
+}
